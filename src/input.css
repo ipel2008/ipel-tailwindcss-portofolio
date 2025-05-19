@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'inter', sans-serif;
+}
+
+.hamburger-line {
+    @apply w-[30px] h-[2px] my-2 block bg-darker;
+}
+
+.hamburger-active > span:nth-child(1) {
+    @apply  rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+    @apply scale-0 origin-center;
+}
+
+.hamburger-active > span:nth-child(3) {
+    @apply -rotate-45;
+}
+
