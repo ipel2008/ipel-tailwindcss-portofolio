@@ -22,3 +22,12 @@ body {
     @apply -rotate-45;
 }
 
+#dark-toggle:checked ~ label div.toggle-circle {
+    @apply translate-x-3;
+    @apply bg-black;
+}
+
+#dark-toggle:checked ~ label div.background {
+    @apply bg-slate-400;
+}
+
